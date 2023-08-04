@@ -1,0 +1,190 @@
+/*Page Loader*/
+#contenedor_carga {
+  background-color: #ffffff;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  z-index: 10000;
+}
+
+#cargaLogo img {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  position: absolute;
+  top: -110px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+#carga {
+  border: 5px solid hsla(0, 0%, 100%, 0);
+  border-top-color: #f4a320;
+  border-radius: 50%;
+  width: 115px;
+  height: 115px;
+  position: absolute;
+  top: -110px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-animation: girar 1s linear infinite;
+  -o-animation: girar 1s linear infinite;
+  animation: girar 1s linear infinite;
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ####### HEADER MENU ########## */
+
+/* ---- HEADER INFORMATION ----- */
+.logo {
+  max-width: 100%;
+  height: 100px;
+}
+
+.header-info-container {
+  background-color: rgb(var(--main-blue));
+  padding: 0.5rem 1rem;
+}
+
+.header-info-icons-mobile {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  /* font-size: 1.2rem; */
+  margin-bottom: 0.5rem;
+}
+
+.header-info-icons-mobile a {
+  color: white;
+}
+
+.header-info-icons-desktop,
+.header-info-phone {
+  display: none;
+}
+
+.header-info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.logo {
+  transition: opacity 1s ease-in-out;
+}
+
+.logo.hidden {
+  opacity: 0.4;
+}
+
+/* -- HEADER BOTÓN SOLICTAR INFORMACIÓN */
+.header-info-btn-link {
+  background-color: white;
+  padding: 0.5rem 0.6rem;
+  border-radius: 5px;
+}
+
+.header-info-btn-link a {
+  color: rgb(var(--main-blue));
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+.header-info-btn-link:hover {
+  background-color: rgb(var(--main-blue));
+  border: 1px solid white;
+}
+
+.header-info-btn-link:hover a {
+  color: white;
+}
+
+/* --- HEADER BOTÓN AULA VIRTUAL */
+.header-info-aula-btn {
+  background-color: rgb(var(--dark-yellow));
+  padding: 0.3rem 0.5rem;
+  border-radius: 16px;
+}
+
+.header-info-aula-btn:hover {
+  background-color: white;
+}
+
+.header-info-aula-btn:hover a {
+  color: rgb(var(--dark-blue));
+}
+
+.header-info-aula-btn a {
+  color: white;
+  font-size: 0.81rem;
+  font-weight: 700;
+}
+
+/* --- HEADER ICON LANGUAGE */
+
+.header-info-lang-icon {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.info-lang {
+  display: none;
+}
+
+/* --- HEADER VIDEO */
+.header-video {
+  text-align: center;
+}
+
+.header-video img {
+  width: 100%;
+}
+
+/* ####### FIN HEADER MENU ########### */
+
+
+/* --- MEDIA QUERIES */
+
+@media screen and (min-width: 360px) {
+}
+
+@media screen and (min-width: 375px) {
+  /* HEADER MENU */
+  .header-info-aula-btn {
+    padding: 0.3rem 1.25rem;
+  }
+
+  /* FIN HEADER MENU */
+}
+
+@media screen and (min-width: 425px) {
+  /* HEADER MENU */
+  .header-info {
+    justify-content: end;
+  }
+
+  .header-info-aula-btn a,
+  .header-info-btn-link a {
+    font-size: 0.75rem;
+  }
+
+  /* FIN HEADER MENU */
+}

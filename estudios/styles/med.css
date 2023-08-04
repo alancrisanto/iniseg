@@ -1,0 +1,123 @@
+/* 544px */
+@media only screen and (min-width: 544px) {
+
+  /* MAIN */
+  .main-cont-mobile-text {
+    left: 10rem;
+  }
+}
+
+@media screen and (min-width: 994px) {
+
+}
+
+/* -- 768px */
+@media only screen and (min-width: 768px) {
+
+  /* MAIN */
+  .main-container-head h1 {
+    font-size: 2.5rem;
+  }
+
+  .main-container-head span {
+    font-size: 1.5rem;
+  }
+
+  .filtrar-mobile-btn {
+    margin: 3rem 0;
+  }
+
+  .main-cont-mobile-text {
+    left: 14.5rem;
+    bottom: 2rem;
+  }
+
+  .main-cont-mobile-text p:nth-child(1) {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .main-cont-mobile-text p:nth-child(2) {
+    font-size: 1.8rem;
+  }
+
+  /* -- IMG CARDS */
+  .main-col-course-detail {
+    min-width: 450px;
+    margin: 0 auto;
+  }
+
+  .price-before h6 {
+    font-size: 1.3rem;
+    margin-bottom: 0;
+  }
+
+  .price-now h5 {
+    font-size: 1.5rem;
+    margin-top: -0.8rem;
+  }
+
+  .price-now span:nth-child(1) {
+    font-size: 1.5rem;
+  }
+
+  .main-col-courses-card {
+    margin: 2.5rem auto 2rem auto;
+    max-width: 450px;
+  }
+
+  /* FOOTER */
+  .footer-1 {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 3.5rem 2rem 0;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    gap: 1rem;
+    text-align: left;
+  }
+
+  .footer-icons {
+    justify-content: flex-end;
+    gap: 1rem;
+    padding-right: 0.5rem;
+    margin: 0;
+  }
+
+  .footer-address p {
+    font-size: clamp(0.8rem, 1.2vw, 1rem);
+    text-align: right;
+    margin-bottom: 1rem !important;
+    padding-right: 0.5rem;
+  }
+
+  .footer-menu-content h3 {
+    margin-bottom: 1rem;
+  }
+
+  .footer-2 {
+    margin-bottom: 2rem;
+    gap: 1rem;
+  }
+
+  .footer-1-icons-address h3 {
+    text-align: right;
+  }
+  /* FIN FOOTER */
+}
+
+@media only screen and (min-width: 820px) {
+  
+  /* MAIN */
+  .main-cont-mobile-text {
+    left: 16.5rem;
+  }
+}

@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- STYLES -->
+  <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="stylesheet" href="../styles/stylesMenu.css">
+  <link rel="stylesheet" href="styles/min.css">
+  <link rel="stylesheet" href="styles/med.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+  <!-- GOOGLE FONTS  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- CDN BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+  <!-- CDN BOOTSTRAP ICONS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <!-- SWIPER PARA CARRUSEL IMAGENES -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+
+  <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
+  <!-- TITLE -->
+  <title>Grupo Historia Militar</title>
+
+  <!-- ICONO PESTAÑA -->
+  <link rel="icon" href="../assets/images/menu/logo-iniseg.png" type="image/png">
+</head>
+
+<body>
+  <div id="contenedor_carga">
+    <div id="carga"></div>
+    <div id="cargaLogo"><img src="../assets/images/menu/logo-azul.png" alt="iniseg logo"></div>
+  </div>
+  <header>
+    <div class="header-info-container">
+      <div class="header-info-icons-mobile header-icons">
+        <a href="https://www.facebook.com/InisegOficial/" target="_blank" rel="noopener noreferer"><i
+            class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/inisegoficial/" target="_blank" rel="noopener noreferer"><i
+            class="bi bi-instagram"></i></a>
+        <a href="https://twitter.com/InisegOficial" target="_blank" rel="noopener noreferer"><i
+            class="bi bi-twitter"></i></a>
+        <a href="https://www.youtube.com/channel/UCpvTeWrw-xa3XUYlUqQoJdw" target="_blank" rel="noopener noreferer"><i
+            class="bi bi-youtube"></i></a>
+        <a href="https://www.linkedin.com/company/inisegoficial/" target="_blank" rel="noopener noreferer"><i
+            class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="header-info">
+        <div class="header-info-btn">
+          <div class="header-info-btn-link">
+            <a href="#">Solicitar Información</a>
+          </div>
+        </div>
+        <div class="header-info-icons-desktop header-icons">
+          <a href="https://www.facebook.com/InisegOficial/" target="_blank" rel="noopener noreferer"><i
+              class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/inisegoficial/" target="_blank" rel="noopener noreferer"><i
+              class="bi bi-instagram"></i></a>
+          <a href="https://twitter.com/InisegOficial" target="_blank" rel="noopener noreferer"><i
+              class="bi bi-twitter"></i></a>
+          <a href="https://www.youtube.com/channel/UCpvTeWrw-xa3XUYlUqQoJdw" target="_blank" rel="noopener noreferer"><i
+              class="bi bi-youtube"></i></a>
+          <a href="https://www.linkedin.com/company/inisegoficial/" target="_blank" rel="noopener noreferer"><i
+              class="bi bi-linkedin"></i></a>
+        </div>
+        <div class="header-info-phone">
+          <i class="bi bi-telephone"></i>
+          <span> (+34) 912 141 926 </span>
+        </div>
+        <div class="header-info-aula">
+          <div class="header-info-aula-btn">
+            <a href="#">Aula Virtual</a>
+          </div>
+        </div>
+        <div class="header-info-lang">
+          <div class="header-info-lang-icon">
+            <i class="bi bi-globe"></i>
+            <span class="info-lang">Español</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar">
+      <div class="container">
+        <div class="header-img-container">
+          <a href="/index.html" rel="noopener noreferer">
+            <img class="logo" src="../assets/images/menu/logo-azul.png"
+              alt="Logo instituto internacional de estudios en Seguridad global iniseg">
+          </a>
+        </div>
+        <ul class="nav-menu">
+          <!-- CENTRO INVESTIGACIÓN -->
+          <li class="nav-menu-item">
+            <i class="bi bi-chevron-right"></i>
+            <a href="#">CENTRO INVESTIGACIÓN</a>
+            <div class="dropdown-menu">
+              <div class="container">
+                <span class="dropdown-close">
+                  <i class="bi bi-chevron-double-left"></i>
+                  Regresar
+                </span>
+                <div class="right-section">
+                  <ul class="dropdown-links">
+                    <li>
+                      <div class="dropdown-links-items">
+                        <a href="#" rel="noopener noreferer" class="underline">Quienes Somos</a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="dropdown-links-items">
+                        <a href="#" rel="noopener noreferer" class="underline">Fines</a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="dropdown-links-items">
+                        <a href="#" rel="noopener noreferer" class="underline">Actividades</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- CENTRO DATOS -->
+          <li class="nav-menu-item">
+            <i class="bi bi-chevron-right"></i>
+            <a href="#" rel="noopener noreferer">CENTRO DATOS</a>
+            <div class="dropdown-menu">
+              <div class="container">
+                <span class="dropdown-close">
+                  <i class="bi bi-chevron-double-left"></i>
+                  Regresar
+                </span>
+                <div class="right-section">
+                  <ul class="dropdown-links">
+                    <li>
+                      <div class="dropdown-links-items">
+                        <a href="#" rel="noopener noreferer" class="underline">Investigación</a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="dropdown-links-items">
+                        <a href="#" rel="noopener noreferer" class="underline">Archivos</a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="dropdown-links-items">
+                        <a href="#" rel="noopener noreferer" class="underline">Videos</a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="dropdown-links-items">
+                        <a href="#" rel="noopener noreferer" class="underline">Mapa</a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="dropdown-links-items">
+                        <a href="#" rel="noopener noreferer" class="underline">Líneas de Investigación</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- LÍNEAS INVESTIGACIÓN -->
+          <li class="nav-menu-item">
+            <i class="bi bi-chevron-right"></i>
+            <a href="#">LÍNEAS INVESTIGACIÓN</a>
+            <div class="dropdown-menu">
+              <div class="container">
+                <span class="dropdown-close">
+                  <i class="bi bi-chevron-double-left"></i>
+                  Regresar
+                </span>
+                <div class="right-section">
+                  <ul class="dropdown-links">
+                    <li>
+                      <div class="dropdown-links-items">
+                        <a href="#" rel="noopener noreferer" class="underline">Tema 1</a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="dropdown-links-items">
+                        <a href="#" rel="noopener noreferer" class="underline">Tema 2</a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="dropdown-links-items">
+                        <a href="#" rel="noopener noreferer" class="underline">Tema 3</a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="dropdown-links-items">
+                        <a href="#" rel="noopener noreferer" class="underline">Tema 4</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- FORMACIÓN -->
+          <li class="nav-menu-item">
+            <i class="bi bi-chevron-right"></i>
+            <a href="#">FORMACIÓN</a>
+            <!-- <div class="dropdown-menu">
+                  <div class="container">
+                    <span class="dropdown-close">
+                      <i class="bi bi-chevron-double-left"></i>
+                      Regresar
+                    </span>
+                    <div class="right-section">
+                      <ul class="dropdown-links">
+                        <li>
+                          <div class="dropdown-links-items">
+                            <h5>Iniseg Global</h5>
+                            <hr />
+                            <a href="#" rel="noopener noreferer" class="underline">Colombia</a>
+                            <a href="#" rel="noopener noreferer" class="underline">Ecuador</a>
+                            <a href="#" rel="noopener noreferer" class="underline">Rep. Dominicana</a>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="dropdown-links-items">
+                            <h5>Proyectos Internacionales</h5>
+                            <hr />
+                            <a href="#" rel="noopener noreferer" class="underline">Mescyt 2023</a>
+                            <a href="#" rel="noopener noreferer" class="underline">EGRADH</a>
+                            <a href="#" rel="noopener noreferer" class="underline">SECAP</a>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div> -->
+          </li>
+          <!-- MIEMBROS -->
+          <li class="nav-menu-item">
+            <i class="bi bi-chevron-right"></i>
+            <a href="#">MIEMBROS</a>
+            <!-- <div class="dropdown-menu">
+                  <div class="container">
+                    <span class="dropdown-close">
+                      <i class="bi bi-chevron-double-left"></i>
+                      Regresar
+                    </span>
+                    <div class="right-section">
+                      <ul class="dropdown-links">
+                        <li>
+                          <div class="dropdown-links-items">
+                            <a href="#" rel="noopener noreferer" class="underline">Escuela De Doctorado</a>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="dropdown-links-items">
+                            <h5>CIIA</h5>
+                            <hr />
+                            <a href="#" rel="noopener noreferer">Grupo de Investigación Historia Militar</a>
+                            <a href="#" rel="noopener noreferer">OCATRY</a>
+                            <a href="#" rel="noopener noreferer">Colegio Universitario</a>
+                            <a href="#" rel="noopener noreferer">Destiny With Liberty</a>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div> -->
+          </li>
+          <!-- CONTACTO -->
+          <li class="nav-menu-item">
+            <i class="bi bi-chevron-right"></i>
+            <a href="#">CONTACTO</a>
+            <!-- <div class="dropdown-menu">
+                  <div class="container">
+                    <span class="dropdown-close">
+                      <i class="bi bi-chevron-double-left"></i>
+                      Regresar
+                    </span>
+                    <div class="right-section">
+                      <ul class="dropdown-links">
+                        <li>
+                          <div class="dropdown-links-items">
+                            <a href="#" rel="noopener noreferer" class="underline">Noticias</a>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="dropdown-links-items">
+                            <a href="#" rel="noopener noreferer" class="underline">Blog</a>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="dropdown-links-items">
+                            <a href="#" rel="noopener noreferer" class="underline">Eventos</a>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="dropdown-links-items">
+                            <a href="#" rel="noopener noreferer" class="underline">Iniseg Cast</a>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div> -->
+          </li>
+        </ul>
+        <i class="bi bi-list toggle-navbar"></i>
+      </div>
+    </nav>
+    <div class="header-video">
+      <picture>
+        <source srcset="../assets/historia_militar/banners/banner1.png" media="(min-width: 600px)" type="image/webp">
+        <source srcset="../assets/historia_militar/banners/banner1.png" media="(min-width: 600px)" type="image/png">
+        <img src="../assets/historia_militar/banners/banner1.png" alt="Iniseg banner de grupo de historia militar ">
+      </picture>
+      <!-- <div class="header-video-title">
+        <p class="grupo">Grupo de <br> Investigación</p>
+        <svg class="icono-barra" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 143.66 7.33"
+          width="200">
+          <defs>
+            <style>
+              .cls-1,
+              .cls-3 {
+                fill: #fff;
+              }
+
+              .cls-1 {
+                stroke: #000;
+              }
+
+              .cls-1,
+              .cls-2,
+              .cls-3 {
+                stroke-miterlimit: 10;
+              }
+
+              .cls-2 {
+                fill: none;
+                stroke: #ccc;
+              }
+
+              .cls-2,
+              .cls-3 {
+                stroke-width: 0.1px;
+              }
+
+              .cls-3 {
+                stroke: #b3b3b3;
+              }
+            </style>
+          </defs>
+          <path class="cls-3"
+            d="M680.4,308h5.46a4.62,4.62,0,0,1,7.11,0l39,0a4.46,4.46,0,0,1,3-1.86,4.39,4.39,0,0,1,4.07,1.86l58.93-.16a4.27,4.27,0,0,1,7,.16h19V311H805.07a4.3,4.3,0,0,1-3.35,2.2,4.08,4.08,0,0,1-3.82-2.2l-59,0a3.74,3.74,0,0,1-6.91.13l-39.13-.07a4,4,0,0,1-7,0l-5.4-.06Z"
+            transform="translate(-680.35 -306.1)" />
+        </svg>
+        <p class="historia">Historia <br> Militar</p>
+      </div> -->
+
+    </div>
+  </header>
+  <main class="main-container">
+    <!-- Introduccióm -->
+    <div class="main-container-1">
+      <div class="main-container-1-text">
+        <p>
+          El <strong>Grupo de Historia Militar de INISEG</strong> es una entidad especializada en el estudio y la
+          investigación de la
+          historia militar. Se compone de investigadores y profesionales en el campo de la historia militar,
+          provenientes de diversas instituciones y organizaciones internacionales. El objetivo principal del
+          <strong>Grupo
+            de Historia Militar de INISEG</strong> es fomentar el estudio y la difusión del conocimiento en el ámbito de
+          la
+          historia militar. Sus miembros colaboran en la producción de trabajos de investigación, análisis y
+          publicaciones
+          que abordan diversos aspectos de la historia militar a nivel global
+        </p>
+        <a href="#" target="_blank" rel="noopener noreferer">Continuar Leyendo >> </a>
+      </div>
+      <div>
+        <img src="../assets/historia_militar/images/img1.jpg" alt="Imagen de Equipo de ejecutivos iniseg">
+      </div>
+    </div>
+    <!-- Artículos y Noticias -->
+    <div class="main-container-2">
+      <section class="container-2-news">
+        <div class="container-2-news-title">
+          <p>Actualidad</p>
+          <h2>Noticias y Artículos</h2>
+        </div>
+        <figure class="container-2-news-img">
+          <div class="news-img-date">
+            <p>05-07-23</p>
+          </div>
+          <div>
+            <img src="../assets/historia_militar/images/img1.jpg" alt="imagen noticias iniseg" loading="lazy">
+          </div>
+          <figcaption>
+            <p>Los talibanes obligan a cerrar los salones de belleza en Afganistán</p>
+            <div class="main-container-2-btn">
+              <a href="#" target="_blank" rel="noopener noreferer">Ver más</a>
+            </div>
+          </figcaption>
+        </figure>
+      </section>
+      <section class="container-2-publications">
+        <div class="container-2-publications-title">
+          <p>Últimas Aportaciones</p>
+          <h2>Publicadas</h2>
+        </div>
+        <div class="container-2-publications-content">
+          <div class="container-2-card">
+            <div class="card-date">
+              <p>03-07-2023</p>
+            </div>
+            <div class="container-2-card-body">
+              <div class="card-body-text">
+                <p>Sexta noche de disturbios en Francia: más de 150 detenidos y tres agentes de las fuerzas del orden
+                  heridos</p>
+                <p>Autor: Pepito Pérez</p>
+              </div>
+              <div class="card-body-icon">
+                <svg class="body-icon-plus" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                  viewBox="0 0 25 25" fill="none">
+                  <g clip-path="url(#clip0_171_60)">
+                    <path d="M11.47 2.5V21.72" stroke="#F2CD2E" stroke-width="5" stroke-miterlimit="10"
+                      stroke-linecap="round" />
+                    <path d="M2.5 12.11H21.56" stroke="#F2CD2E" stroke-width="5" stroke-miterlimit="10"
+                      stroke-linecap="round" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_171_60">
+                      <rect width="24.06" height="24.22" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="container-2-card">
+            <div class="card-date">
+              <p>03-07-2023</p>
+            </div>
+            <div class="container-2-card-body">
+              <div class="card-body-text">
+                <p>Sexta noche de disturbios en Francia: más de 150 detenidos y tres agentes de las fuerzas del orden
+                  heridos</p>
+                <p>Autor: Pepito Pérez</p>
+              </div>
+              <div class="card-body-icon">
+                <svg class="body-icon-plus" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                  viewBox="0 0 25 25" fill="none">
+                  <g clip-path="url(#clip0_171_60)">
+                    <path d="M11.47 2.5V21.72" stroke="#F2CD2E" stroke-width="5" stroke-miterlimit="10"
+                      stroke-linecap="round" />
+                    <path d="M2.5 12.11H21.56" stroke="#F2CD2E" stroke-width="5" stroke-miterlimit="10"
+                      stroke-linecap="round" />
+                  </g>
+                  <!-- <defs>
+                      <clipPath id="clip0_171_60">
+                        <rect width="24.06" height="24.22" fill="white" />
+                      </clipPath>
+                    </defs> -->
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="container-2-card">
+            <div class="card-date">
+              <p>03-07-2023</p>
+            </div>
+            <div class="container-2-card-body">
+              <div class="card-body-text">
+                <p>Sexta noche de disturbios en Francia: más de 150 detenidos y tres agentes de las fuerzas del orden
+                  heridos</p>
+                <p>Autor: Pepito Pérez</p>
+              </div>
+              <div class="card-body-icon">
+                <svg class="body-icon-plus" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                  viewBox="0 0 25 25" fill="none">
+                  <g clip-path="url(#clip0_171_60)">
+                    <path d="M11.47 2.5V21.72" stroke="#F2CD2E" stroke-width="5" stroke-miterlimit="10"
+                      stroke-linecap="round" />
+                    <path d="M2.5 12.11H21.56" stroke="#F2CD2E" stroke-width="5" stroke-miterlimit="10"
+                      stroke-linecap="round" />
+                  </g>
+                  <!-- <defs>
+                      <clipPath id="clip0_171_60">
+                        <rect width="24.06" height="24.22" fill="white" />
+                      </clipPath>
+                    </defs> -->
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Galeria Imágenes -->
+    <!-- Additional required wrapper -->
+    <div class="main-container-3 swiper swiper-news">
+      <!-- Cards noticias -->
+      <div class="container-3-swiper swiper-wrapper">
+        <!-- Slides -->
+        <figure class="container-3-img swiper-slide">
+          <div class="news-img-date">
+            <p>05-07-23</p>
+          </div>
+          <div class="container-3-img-div">
+            <img src="../assets/historia_militar/images/img3.jpg" alt="imagen noticias iniseg" loading="lazy">
+          </div>
+          <figcaption>
+            <p>AVT denuncia ante la Audiencia Nacional a abogada de Hasel por enaltecimiento</p>
+            <div class="card-body-icon">
+              <svg class="body-icon-plus" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"
+                fill="none">
+                <g clip-path="url(#clip0_171_60)">
+                  <path d="M11.47 2.5V21.72" stroke="#F2CD2E" stroke-width="5" stroke-miterlimit="10"
+                    stroke-linecap="round" />
+                  <path d="M2.5 12.11H21.56" stroke="#F2CD2E" stroke-width="5" stroke-miterlimit="10"
+                    stroke-linecap="round" />
+                </g>
+                <!-- <defs>
+                    <clipPath id="clip0_171_60">
+                      <rect width="24.06" height="24.22" fill="white" />
+                    </clipPath>
+                  </defs> -->
+              </svg>
+            </div>
+          </figcaption>
+        </figure>
+        <figure class="container-3-img swiper-slide">
+          <div class="news-img-date">
+            <p>05-07-23</p>
+          </div>
+          <div class="container-3-img-div">
+            <img src="../assets/historia_militar/images/img4.jpg" alt="imagen noticias iniseg" loading="lazy">
+          </div>
+          <figcaption>
+            <p>INISEG organiza «Conversatorio Virtual» para conmemorar la Independencia de Colombia junto al Ejército
+              Nacional</p>
+            <div class="card-body-icon">
+              <svg class="body-icon-plus" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"
+                fill="none">
+                <g clip-path="url(#clip0_171_60)">
+                  <path d="M11.47 2.5V21.72" stroke="#F2CD2E" stroke-width="5" stroke-miterlimit="10"
+                    stroke-linecap="round" />
+                  <path d="M2.5 12.11H21.56" stroke="#F2CD2E" stroke-width="5" stroke-miterlimit="10"
+                    stroke-linecap="round" />
+                </g>
+                <!-- <defs>
+                    <clipPath id="clip0_171_60">
+                      <rect width="24.06" height="24.22" fill="white" />
+                    </clipPath>
+                  </defs> -->
+              </svg>
+            </div>
+          </figcaption>
+        </figure>
+        <figure class="container-3-img swiper-slide">
+          <div class="news-img-date">
+            <p>05-07-23</p>
+          </div>
+          <div class="container-3-img-div">
+            <img src="../assets/historia_militar/images/img5.jpg" alt="imagen noticias iniseg" loading="lazy">
+          </div>
+          <figcaption>
+            <p>Desmantelan célula anarquista italiana responsable de varios ataques</p>
+            <div class="card-body-icon">
+              <svg class="body-icon-plus" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"
+                fill="none">
+                <g clip-path="url(#clip0_171_60)">
+                  <path d="M11.47 2.5V21.72" stroke="#F2CD2E" stroke-width="5" stroke-miterlimit="10"
+                    stroke-linecap="round" />
+                  <path d="M2.5 12.11H21.56" stroke="#F2CD2E" stroke-width="5" stroke-miterlimit="10"
+                    stroke-linecap="round" />
+                </g>
+                <!-- <defs>
+                    <clipPath id="clip0_171_60">
+                      <rect width="24.06" height="24.22" fill="white" />
+                    </clipPath>
+                  </defs> -->
+              </svg>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <!-- Botón Todas las noticias -->
+    <div class="container-3-all-news">
+      <div class="btn-all-news">
+        <a href="#" target="_blank" rel="noopener noreferer">Todas las noticias</a>
+      </div>
+    </div>
+
+    <!-- Banner Máster universitario en Historia militar -->
+    <div class="main-container-4">
+      <div class="container-4-banner">
+        <figure>
+          <picture class="container-4-banner-img">
+            <source srcset="../assets/historia_militar/banners/banner2.jpg" media="(min-width: 600px)" type="image/jpg">
+            <img src="../assets/historia_militar/banners/banner2-sm1.jpg" alt="Imagen master universitario en historia militar">
+          </picture>
+          <figcaption>
+            <div class="container-4-banner-text">
+              <p>Sé un experto con el</p>
+              <h2>Máster Universitario en Historia Militar</h2>
+            </div>
+            <div class="container-4-banner-btn">
+              <a href="#" target="_blank" rel="noopener noreferrer">Más info aquí</a>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- Editorial Sotecza - Banner -->
+    <div class="main-container-5">
+      <div class="container-5-text">
+        <p>Conoce nuestra</p>
+        <h2>Editorial Sotecza</h2>
+      </div>
+      <div class="container-5-img">
+        <picture>
+          <source srcset="../assets/historia_militar/banners/banner3.webp" media="(min-width: 600px)" type="image/webp">
+          <source srcset="../assets/historia_militar/banners/banner3.jpg" media="(min-width: 600px)" type="image/jpg">
+          <img src="../assets/historia_militar/banners/banner3-sm.jpg" alt="Editorial Sotecza">
+        </picture>
+      </div>
+      <div class="container-5-btn">
+        <a href="#" target="_blank" rel="noopener noreferer">Visitar Web</a>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-1">
+      <div class="footer-logo">
+        <a href="https://www.iniseg.es/" target="_blank" rel="noopener noreferer">
+          <img src="assets/menu/logo-nombre-blanco.png" alt="">
+        </a>
+      </div>
+      <div class="footer-content">
+        <section class="footer-menu-1 footer-menu-content">
+          <h3>CENTRO DE INVESTIGACIÓN</h3>
+          <ul>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferer">Quienes Somos</a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferer">
+                Fines
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferer">
+                Actividades
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer-menu-2 footer-menu-content">
+          <h3>CENTRO DE DATOS</h3>
+          <ul>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferer">
+                Investigación
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferer">
+                Achivos
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferer">
+                Titulaciones
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferer">
+                Videos
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferer">
+                Mapa
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferer">
+                Líneas de Investigación
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer-menu-3 footer-menu-content">
+          <h3>FORMACIÓN</h3>
+          <h3>MIEMBROS</h3>
+          <h3>CONTACTO</h3>
+        </section>
+      </div>
+      <div class="footer-icons-address">
+        <div class="footer-icons">
+          <a href="https://www.facebook.com/InisegOficial/" target="_blank" rel="noopener noreferer"><i
+              class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/inisegoficial/" target="_blank" rel="noopener noreferer"><i
+              class="bi bi-instagram"></i></a>
+          <a href="https://twitter.com/InisegOficial" target="_blank" rel="noopener noreferer"><i
+              class="bi bi-twitter"></i></a>
+          <a href="https://www.youtube.com/channel/UCpvTeWrw-xa3XUYlUqQoJdw" target="_blank" rel="noopener noreferer"><i
+              class="bi bi-youtube"></i></a>
+          <a href="https://www.linkedin.com/company/inisegoficial/" target="_blank" rel="noopener noreferer"><i
+              class="bi bi-linkedin"></i></a>
+        </div>
+        <div class="footer-address">
+          <p>Calle Emilia Pardo Bazán 1,<br>28903 Getafe, Madrid</p>
+          <p>(+34) 912 141 926</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-2">
+      <a href="https://euphe.eu/" target="_blank" rel="noopener noreferer">
+        <img src="../assets/images/footer-logos/euphe-logo-gray.png" alt="logo de European union of private higher education EUPHE ">
+      </a>
+      <a href="https://www.aeen.org/" target="_blank" rel="noopener noreferer">
+        <img src="../assets/images/footer-logos/aen-logo.png" alt="logo asociación española de escuela de negocios aeen">
+      </a>
+      <a href="https://www.mjusticia.gob.es/" target="_blank">
+        <img src="../assets/images/footer-logos/Logotipo_del_Ministerio_de_Justicia.svg" alt="logo ministerio de justicia españa"
+          width="100%" height="100%">
+      </a>
+      <a href="https://www.interior.gob.es/" target="_blank">
+        <img src="../assets/images/footer-logos/Logotipo_del_Ministerio_del_Interior.svg" alt="logo ministerio del interior españa"
+          width="100%" height="100%">
+      </a>
+      <a href="https://qfor.org/obtenir_le_label_qfor.php?txtlang=es" target="_blank">
+        <img src="../assets/images/footer-logos/qfor-logo.svg" alt="logo de certificación qfor" width="100%" height="100%">
+      </a>
+    </div>
+    <div class="footer-3">
+      <p>Copyrights © 2022 Todos los derechos reservados <span> / </span> Condiciones generales de contratación <span> /
+        </span> Aviso legal <span> / </span> Política de Cookies <span> / </span> Política de privacidad</p>
+    </div>
+  </footer>
+  <!-- SWIPER PARA CARRUSEL IMAGENES -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <!-- BOOTSTRAP -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+  <script src="../js/menu.js"></script>
+</body>
+
+</html>

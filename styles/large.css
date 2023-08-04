@@ -1,0 +1,28 @@
+@media only screen and (min-width: 1024px) {
+  /* HEADER MENU */
+
+  .header-img-container {
+    max-width: 155px;
+  }
+
+  .header-info-lang-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .info-lang {
+    display: block;
+    font-size: 0.85rem;
+  }
+
+  .header-video {
+    margin-top: -100px;
+  }
+
+  /* FIN HEADER MENU */
+}
+
+@media screen and (min-width: 1280px) {
+}
