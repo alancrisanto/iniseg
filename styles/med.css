@@ -1,47 +1,14 @@
-/* 544px */
 @media only screen and (min-width: 544px) {
-  /* HEADER MENU */
-  .header-info {
-    justify-content: end;
-  }
 
-  .header-info-phone {
-    display: block;
-    color: white;
-    font-size: 0.75rem;
-  }
-
-  /* FIN HEADER MENU */
 }
 
 @media screen and (min-width: 994px) {
-  /* -- HEADER MENU */
-  .dropdown-close {
-    display: none;
-  }
 
-  /* FIN HEADER MENU */
 }
 
 /* -- 768px */
 @media only screen and (min-width: 768px) {
-  /* HEADER MENU */
-  .header-info-icons-mobile {
-    display: none;
-  }
 
-  .header-info-icons-desktop {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    font-size: 1rem;
-  }
-
-  .header-info-icons-desktop a {
-    color: white;
-  }
-
-  /* FIN HEADER MENU */
 }
 
 @media only screen and (min-width: 820px) {
