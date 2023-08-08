@@ -64,27 +64,43 @@ if(navMenu.classList.contains('show')) {
 
 // ### FUNCION PARA CAMBIAR LA IMAGEN DEL LOGO 
 
+const currentPagePath = window.location.pathname;
+console.log(currentPagePath)
 const logo = document.querySelector('.logo');
 const navbarMenu = document.querySelector('nav');
 const navbarStyle = window.getComputedStyle(navbarMenu);
 
+// Determinar si la página actual es la página de inicio
+// Se utiliza para validar la ruta del logo que debe tomar
+
+const isIndexPage = currentPagePath === '/index.html' || currentPagePath === '/';
+
+
 // SELECCIONAR IMAGEN AL ABRIR LA PÁGINA
 
 if (navbarStyle.backgroundColor === 'rgba(0, 0, 0, 0)'){
-logo.src = '../assets/images/menu/nombre-blanco.png';
+  if(isIndexPage){
+    logo.src = 'assets/images/menu/nombre-blanco.png';
+  } else {
+    logo.src = '../assets/images/menu/nombre-blanco.png';
+  }
 } else {
-logo.src = '../assets/images/menu/nombre-azul.png';
+  if(isIndexPage){
+    logo.src = 'assets/images/menu/nombre-azul.png';
+  } else {
+    logo.src = '../assets/images/menu/nombre-azul.png';
+  }
 }
 
 // CAMBIAR LA IMAGEN UNA VEZ CARGADA LA PÁGINA DE ACUERDO AL BACKGROUND-COLOR
 let images = [
-'../assets/images/menu/logo-blanco.png',
-'../assets/images/menu/nombre-blanco.png',
+'assets/images/menu/logo-blanco.png',
+'assets/images/menu/nombre-blanco.png',
 ];
 
 let imagesBlue = [
-'../assets/images/menu/logo-azul.png',
-'../assets/images/menu/nombre-azul.png',
+'assets/images/menu/logo-azul.png',
+'assets/images/menu/nombre-azul.png',
 ]
 let currentImageIndex = 0;
 
@@ -93,9 +109,18 @@ function changeLogo() {
 logo.classList.add('hidden');
 setTimeout(function() {
 if (navbarStyle.backgroundColor === 'rgba(0, 0, 0, 0)'){
-  logo.src = images[currentImageIndex];
+  if (isIndexPage){
+    logo.src = images[currentImageIndex];
+  } else {
+    logo.src = '../' + images[currentImageIndex];
+  }
 } else {
-  logo.src = imagesBlue[currentImageIndex];
+  if(isIndexPage){
+    logo.src = imagesBlue[currentImageIndex];
+  } else{
+    logo.src = '../' + imagesBlue[currentImageIndex];
+  }
+
 }
 logo.classList.remove('hidden');
 currentImageIndex = (currentImageIndex + 1) % images.length;
