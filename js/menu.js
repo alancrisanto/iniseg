@@ -65,7 +65,6 @@ if(navMenu.classList.contains('show')) {
 // ### FUNCION PARA CAMBIAR LA IMAGEN DEL LOGO 
 
 const currentPagePath = window.location.pathname;
-console.log(currentPagePath)
 const logo = document.querySelector('.logo');
 const navbarMenu = document.querySelector('nav');
 const navbarStyle = window.getComputedStyle(navbarMenu);
